@@ -1,0 +1,59 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: white;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(90deg, #BFF098, #4E65FF);   
+}
+
+.main-div{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 80px);    
+}
+
+.main-div > button{
+    font-size: large;
+    border: 0.5px solid darkgoldenrod;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main-div > button:hover{
+    cursor: pointer;
+    background: linear-gradient(#2BC0E4, #3A6073)
+}
+
+.big-button{
+    grid-column: span 2;
+}
+
+.header{
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-right: 3%;
+    word-break: break-all;
+    word-wrap: break-word;
+    background: linear-gradient(#1FA2FF, #12D8FA);
+}
+
+.actual-output{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.previous-output{
+    font-size: larger;
+    font-weight: bold;
+}
